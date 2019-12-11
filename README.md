@@ -16,6 +16,7 @@ You can install the released version of eplR from [Github](https://github.com/gl
 # Install eplR from Github
 install.packages("devtools")
 devtools::install_github("gl2668/eplR")
+library(eplR)
 ```
 ## Usage
 ***

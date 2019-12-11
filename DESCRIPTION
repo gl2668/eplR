@@ -13,11 +13,9 @@ LazyData: true
 Imports: 
     dplyr,
     ggplot2,
-    httr,
-    jsonlite,
     knitr,
-    rmarkdown,
-    utils
+    lubridate,
+    rmarkdown
 RoxygenNote: 7.0.2.9000
 VignetteBuilder: knitr
 URL: https://github.com/gl2668/eplR.git

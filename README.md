@@ -25,10 +25,10 @@ library(eplR)
 
 #### Data that comes with the package
 
-The `eplR` package comes with a built in dataset for 10 seasons of English Premier League (soccer) games. They are from 2009/2010 to 2018/2019. To call on the dataset just use call `eplData`. The format of `eplData` is a list of dataframes so to get the dataframe for 2009/2010 season use the following code:
+The `eplR` package comes with a built in dataset for 17 seasons of English Premier League (soccer) games. They are from 2002/2003 to 2018/2019. To call on the dataset just use call `eplData`. The format of `eplData` is a list of dataframes so to get the dataframe for 2002/2003 season use the following code:
 
 ```{r}
-# Get Data for season 2009/2010
+# Get Data for season 2002/2003
 eplData[[1]]
 ```
 

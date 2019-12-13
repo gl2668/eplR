@@ -16,7 +16,8 @@ A dataframe with season statistics for the specified Season.
 }
 \description{
 This function allows R users to get referee statistics for a specified season in the
-English Premier League. The data is retrieved from DataHub.io and covers from 2009 to 2019.
+English Premier League. The data is retrieved from DataHub.io and football-data.co.uk.
+It covers from 2002 to 2019.
 }
 \details{
 The function requires users to input one argument. This argument specifies the EPL Season

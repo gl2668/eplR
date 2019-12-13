@@ -31,26 +31,23 @@
   \item{B365H}{Bet365 Home Team Win Odds}
   \item{B365D}{Bet365 Draw Odds}
   \item{B365A}{Bet365 Away Team Win Odds}
-  \item{BWH}{Bet&Win Home Team Win Odds}
-  \item{BWD}{Bet&Win Draw Odds}
-  \item{BWA}{Bet&Win Away Team Win Odds}
   \item{IWH}{Interwetten Home Team Win Odds}
   \item{IWD}{Interwetten Draw Odds}
   \item{IWA}{Interwetten Away Team Win Odds}
   \item{WHH}{William Hill Home Team Win Odds}
   \item{WHD}{William Hill Draw Odds}
   \item{WHA}{William Hill Away Team Win Odds}
-  \item{VCH}{VC Bet Home Team Win Odds}
-  \item{VCD}{VC Bet Draw Odds}
-  \item{VCA}{VC Bet Away Team Win Odds}
 }}
 \source{
 \url{https://datahub.io/sports-data/english-premier-league#readme}
+
+\url{http://www.football-data.co.uk/englandm.php}
 }
 \usage{
 eplData
 }
 \description{
-The dataset is a list of 10 dataframes covering EPL data from seasons 2009-2010 to 2018-2019. The data is retrieved from DataHub.io.
+The dataset is a list of 17 dataframes covering EPL data from seasons
+2002-2003 to 2018-2019. The data is retrieved from DataHub.io and Football-data.uk.
 }
 \keyword{datasets}

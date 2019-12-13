@@ -1,8 +1,8 @@
 #' getData
 #'
 #' This function allows R users to retrieve match statistics and betting odds for
-#' English Premier League games over the past decade.
-#' The data is retrieved from DataHub.io
+#' English Premier League games over the past 17 seasons.
+#' The data is retrieved from DataHub.io and football-data.co.uk
 #'
 #' The function allows the user to input three arguments. The first argument is season,
 #' which specifies the EPL Season that the user wants to retrieve data for. The second
@@ -32,26 +32,40 @@
 
 getData <- function(season, bet=TRUE, team="all") {
 
-  if(season == "0910") {
+  if(season == "0203") {
     season_query <- 1
-  } else if (season == "1011") {
+  } else if (season == "0304") {
     season_query <- 2
-  } else if (season == "1112") {
+  } else if (season == "0405") {
     season_query <- 3
-  } else if (season == "1213") {
+  } else if (season == "0506") {
     season_query <- 4
-  } else if (season == "1314") {
+  } else if (season == "0607") {
     season_query <- 5
-  } else if (season == "1415") {
+  } else if (season == "0708") {
     season_query <- 6
-  } else if (season == "1516") {
+  } else if (season == "0809") {
     season_query <- 7
-  } else if (season == "1617") {
+  } else if (season == "0910") {
     season_query <- 8
-  } else if (season == "1718") {
+  } else if (season == "1011") {
     season_query <- 9
-  } else if (season == "1819") {
+  } else if (season == "1112") {
     season_query <- 10
+  } else if (season == "1213") {
+    season_query <- 11
+  } else if (season == "1314") {
+    season_query <- 12
+  } else if (season == "1415") {
+    season_query <- 13
+  } else if (season == "1516") {
+    season_query <- 14
+  } else if (season == "1617") {
+    season_query <- 15
+  } else if (season == "1718") {
+    season_query <- 16
+  } else if (season == "1819") {
+    season_query <- 17
   } else {
     stop("Error. Season not found. Please check season argument.")
   }

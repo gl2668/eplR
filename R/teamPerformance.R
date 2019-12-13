@@ -1,6 +1,7 @@
 #' teamPerformance
 #'
-#' This function allows R users to visualize the performance of a specified team in the English Premier League over a specified season.
+#' This function allows R users to visualize the performance of a specified team in the English Premier League
+#'  over a specified season.
 #'
 #' The function requires the user to input two arguments. The first argument is the season and the second
 #' argument is the team.
@@ -24,28 +25,42 @@
 
 teamPerformance <- function(season, team) {
 
-  if(season == "0910") {
+  if(season == "0203") {
     season_query <- 1
-  } else if (season == "1011") {
+  } else if (season == "0304") {
     season_query <- 2
-  } else if (season == "1112") {
+  } else if (season == "0405") {
     season_query <- 3
-  } else if (season == "1213") {
+  } else if (season == "0506") {
     season_query <- 4
-  } else if (season == "1314") {
+  } else if (season == "0607") {
     season_query <- 5
-  } else if (season == "1415") {
+  } else if (season == "0708") {
     season_query <- 6
-  } else if (season == "1516") {
+  } else if (season == "0809") {
     season_query <- 7
-  } else if (season == "1617") {
+  } else if (season == "0910") {
     season_query <- 8
-  } else if (season == "1718") {
+  } else if (season == "1011") {
     season_query <- 9
-  } else if (season == "1819") {
+  } else if (season == "1112") {
     season_query <- 10
+  } else if (season == "1213") {
+    season_query <- 11
+  } else if (season == "1314") {
+    season_query <- 12
+  } else if (season == "1415") {
+    season_query <- 13
+  } else if (season == "1516") {
+    season_query <- 14
+  } else if (season == "1617") {
+    season_query <- 15
+  } else if (season == "1718") {
+    season_query <- 16
+  } else if (season == "1819") {
+    season_query <- 17
   } else {
-    stop("Error. Season not found. Please check argument.")
+    stop("Error. Season not found. Please check season argument.")
   }
 
   dataPull <- eplData[[season_query]]

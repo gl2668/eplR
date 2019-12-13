@@ -4,8 +4,8 @@ author: "Gerald Lee"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{eplR}
-  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{eplR_vignette}
+  %\VignetteEngine{knitr::knitr}
   %\VignetteEncoding{UTF-8}
 ---
 
@@ -24,11 +24,11 @@ library(eplR)
 
 ### Data that comes with the package
 
-The `eplR` package comes with a built in dataset for 10 seasons of English Premier League (soccer) games. They are from 2009/2010 to 2018/2019. To call on the dataset just use call `eplData`. The format of `eplData` is a list of dataframes so to get the dataframe for 2009/2010 season use the following code:
+The `eplR` package comes with a built in dataset for 17 seasons of English Premier League (soccer) games. They are from 2002/2003 to 2018/2019. To call on the dataset just use call `eplData`. The format of `eplData` is a list of dataframes so to get the dataframe for 2009/2010 season use the following code:
 
 ```{r}
 # Get Data for season 2009/2010
-head(eplData[[1]])
+head(eplData$`0910data`)
 ```
 
 ***
@@ -74,4 +74,3 @@ To visualize the performance of a team over the course of a particular season, u
 teamPerformance(1819, "Man City")
 teamPerformance(1819, "Man United")
 ```
-

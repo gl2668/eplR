@@ -7,7 +7,8 @@ test_that("Output of Package functions are correct", {
 })
 
 test_that("getData is extracting the correct data", {
-  expect_equal(eplR::getData("0910"), eplData[[1]])
+  expect_equal(eplR::getData("0203"), eplData[[1]])
+  expect_equal(eplR::getData("1415"), eplData[[13]])
 })
 
 test_that("Check if Errors are working", {

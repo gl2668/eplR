@@ -20,8 +20,8 @@ A dataframe with summary season statistics for the specified team and season.
 }
 \description{
 This function allows R users to get season statistics for a specified team and
-season in the English Premier League. The data is retrieved from DataHub.io
-and covers from 2009 to 2019.
+season in the English Premier League. The data is retrieved from DataHub.io and
+football-data.co.uk. It covers from 2009 to 2019.
 }
 \details{
 The function requires users to input two different arguments. The first argument

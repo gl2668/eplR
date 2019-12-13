@@ -17,7 +17,8 @@ that the user is only interested in. Ensure that team name is in correct charact
 A plot of the specified team's cummulated points over the specified Season.
 }
 \description{
-This function allows R users to visualize the performance of a specified team in the English Premier League over a specified season.
+This function allows R users to visualize the performance of a specified team in the English Premier League
+ over a specified season.
 }
 \details{
 The function requires the user to input two arguments. The first argument is the season and the second

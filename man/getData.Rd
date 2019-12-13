@@ -24,8 +24,8 @@ A dataframe with match statistics and / or betting odds for the specified Season
 }
 \description{
 This function allows R users to retrieve match statistics and betting odds for
-English Premier League games over the past decade.
-The data is retrieved from DataHub.io
+English Premier League games over the past 17 seasons.
+The data is retrieved from DataHub.io and football-data.co.uk
 }
 \details{
 The function allows the user to input three arguments. The first argument is season,

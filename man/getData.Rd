@@ -37,5 +37,5 @@ wants to retrieve data only for a particular team.
 \examples{
 getData(season = "1819", bet = FALSE, team = "Arsenal")
 getData(season = "1617", bet = TRUE, team = "Chelsea")
-getData(season = "1415")
+getData(season = "1415", team = "Man City")
 }

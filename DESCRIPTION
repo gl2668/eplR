@@ -19,3 +19,5 @@ Imports:
 RoxygenNote: 7.0.2.9000
 VignetteBuilder: knitr
 URL: https://github.com/gl2668/eplR.git
+Suggests: 
+    testthat (>= 2.1.0)

@@ -28,9 +28,9 @@
 #' @examples
 #' getData(season = "1819", bet = FALSE, team = "Arsenal")
 #' getData(season = "1617", bet = TRUE, team = "Chelsea")
-#' getData(season = "1415")
+#' getData(season = "1415", team = "Man City")
 
-getData <- function(season, bet = TRUE, team = "all") {
+getData <- function(season, bet=TRUE, team="all") {
 
   if(season == "0910") {
     season_query <- 1
@@ -53,25 +53,28 @@ getData <- function(season, bet = TRUE, team = "all") {
   } else if (season == "1819") {
     season_query <- 10
   } else {
-    stop("Error. Season not found. Please check argument.")
+    stop("Error. Season not found. Please check season argument.")
   }
 
   dataPull <- eplData[[season_query]]
 
-  if(bet == TRUE) {
-    dataPull <- dataPull
+  if(team == "all") {
+    dataPull1 <- dataPull
+  } else if (team %in% unique(eplData$`0910data`$HomeTeam)){
+    team <- team
+    dataPull1 <- dataPull %>%
+      dplyr::filter(HomeTeam == team | AwayTeam == team)
   } else {
-    dataPull <- dataPull %>%
-      dplyr::select(Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR, HTHG, HTAG, HTR, Referee,
-                    HS, AS, HST, AST, HF, AF, HC, AC, HY, AY, HR, AR)
+    stop('Error. Team was not found in the specified season. Please check team spelling.')
   }
 
-  if(team == "all") {
-    dataPull <- dataPull
+  if(bet == FALSE) {
+    dataPull2 <- dataPull1 %>%
+      dplyr::select(Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR, HTHG, HTAG, HTR, Referee,
+                    HS, AS, HST, AST, HF, AF, HC, AC, HY, AY, HR, AR)
   } else {
-    team <- team
-    dataPull <- dataPull %>%
-      dplyr::filter(HomeTeam == team | AwayTeam == team)
+    dataPull2 <- dataPull1
   }
-  dataPull
+
+  dataPull2
 }
